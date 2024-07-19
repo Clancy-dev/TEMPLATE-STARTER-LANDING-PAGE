@@ -2,7 +2,7 @@ const popUp = document.querySelector(".pop-up-menu");
 const overlay = document.querySelector(".overlay");
 const btnOpenPopUpAndShowOverlay = document.querySelector(".nav-icon");
 const btnClosePopUpAndHideOverlay = document.querySelector(".right-header-pop");
-
+const linkBtns = document.querySelectorAll(".link-btn");
 
 function closePopUpAndHideOverlay(){
     popUp.classList.add("close-pop-up-menu");
@@ -17,7 +17,11 @@ function openPopUpAndShowOverlay(){
 
 btnOpenPopUpAndShowOverlay.addEventListener("click",openPopUpAndShowOverlay);
 btnClosePopUpAndHideOverlay.addEventListener("click",closePopUpAndHideOverlay);
-
+linkBtns.forEach((linkBtn) => {
+    linkBtn.addEventListener("click",closePopUpAndHideOverlay);
+    
+});
+console.log(linkBtns);
 
 
 

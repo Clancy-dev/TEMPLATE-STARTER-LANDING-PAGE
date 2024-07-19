@@ -9,6 +9,10 @@
   height: 300vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .overlay {
   width: 100%;
   height: 100%;
@@ -143,31 +147,32 @@
   }
 }
 
-.section-one {
+#section-one {
   width: 100%;
   height: 100vh;
   background-color: purple;
 }
 
-.section-two {
+#section-two {
   width: 100%;
   height: 100vh;
   background-color: pink;
+  display: block;
 }
 
-.section-three {
+#section-three {
   width: 100%;
   height: 100vh;
   background-color: green;
 }
 
-.section-four {
+#section-four {
   width: 100%;
   height: 100vh;
   background-color: black;
 }
 
-.section-five {
+#section-five {
   width: 100%;
   height: 100vh;
   background-color: grey;
