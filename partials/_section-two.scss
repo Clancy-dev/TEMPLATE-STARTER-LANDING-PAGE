@@ -192,6 +192,9 @@
                 color: white;
                 border-radius: 10px;
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
                 @media (max-width:570px) {
                     font-size: 17px;
