@@ -23,6 +23,36 @@ linkBtns.forEach((linkBtn) => {
 });
 console.log(linkBtns);
 
+//SWIPER
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+     // Autoplay settings
+    autoplay: {
+     delay: 3000, // 3 seconds delay between slides
+     disableOnInteraction: false, // Continue autoplay after interaction
+            },
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
+
 
 
 

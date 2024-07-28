@@ -1,6 +1,213 @@
 #section-two{
     width: 100%;
-    height: 100vh;
-    background-color: pink;
-    display: block;
+    min-height: 100vh;
+    padding-bottom: 0.5rem;
+    
+   
+    
+    
+   .section-two-info{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+   
+    
+    
+    
+
+    h1{
+        color: green;
+        
+        span{
+            color: brown;
+        }
+
+    }
+
+    h3{
+        font-size: 95%;
+        color: grey;
+        @media (max-width:713px) {
+            font-size: 90%;
+            
+        }
+    }
+
+   }
+   .card-container{
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width:700px) {
+        flex-direction: column;
+    }
+
+    .card{
+        width: 50%;
+       min-height: 100%;
+        @media (max-width:700px) {
+            width: 100%;
+        }
+
+        .top-card{
+            width: 100%;
+            min-height: 50%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        .middle-card{
+            width: 100%;
+            min-height: 14%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: white;
+            color: brown;
+            padding: 0.5rem 1rem;
+            @media (max-width:513px) {
+                height: 23%;
+            }
+            @media (max-width:481px) {
+                height: 31%;
+            }
+            @media (max-width:296px) {
+                height: 34%;
+            }
+            @media (max-width:288px) {
+                height: 42%;
+            }
+            
+            
+
+           
+           
+
+            .title-p{
+                font-size: 150%;
+                font-weight: 600;
+                @media (max-width:988px) {
+                    font-size: 130%;
+                }
+                @media (max-width:438px) {
+                    font-size: 110%;
+                }
+                @media (max-width:320px) {
+                    font-size: 95%;
+                }
+               
+               
+            }
+            .detail-p{
+                font-size: 110%;
+                @media (max-width:320px) {
+                    font-size: 80%;
+                }
+                @media (max-width:295px) {
+                    font-size: 70%;
+                }
+
+                
+            }
+        
+
+        }
+        .price-card{
+            width: 100%;
+           min-height: 10%;
+            padding: 0.3rem 0.5rem;
+            gap: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+
+            .eye{
+                max-width: 30%;
+                min-height: 100%;
+                font-size: 160%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color: orangered;
+                border-radius: 15px;
+                text-decoration: none;
+                gap: 2px;
+                padding: 0.5rem 2rem;
+
+                @media (max-width:570px) {
+                    font-size: 120%;
+                }
+                @media (max-width:405px) {
+                    font-size: 95%;
+                }
+                
+                i{
+                    color: black;
+                }
+                
+              
+            
+
+            }
+            .price{
+                max-width: 70%;
+                min-height: 100%;
+                color: brown;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                font-size: 150%;
+                color: green;
+                gap: 0.5rem;
+
+                @media (max-width:570px) {
+                    font-size: 120%;
+                }
+                @media (max-width:405px) {
+                    font-size: 95%;
+                }
+                
+            
+
+            }
+            .seller-btn{
+                max-width: 30%;
+                min-height: 100%;
+                background-color: orangered;
+                padding: 0.5rem 2rem;
+                font-size: 20px;
+                border: none;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+
+                @media (max-width:570px) {
+                    font-size: 17px;
+                }
+                @media (max-width:405px) {
+                    font-size: 15px;
+                }
+                @media (max-width:350px) {
+                    font-size: 90%;
+                    padding: 0.5rem;
+                }
+
+            }
+
+        }
+    }
+
+   }
 }

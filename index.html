@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simo Property Consultants Ltd</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="overall-container">
+
+        
 
         <div class="overlay hide-overlay"></div>
 
         <div class="pop-up-menu close-pop-up-menu">
            <div class="header-pop">
             <div class="left-header-pop">
-
+                <img src="spc.jfif" alt="This is a logo">
 
             </div>
             <div class="right-header-pop">
@@ -28,11 +34,11 @@
            </div>
            <div class="middle-pop">
 
-            <a href="#section-one" class="link-btn">Home</a>
-            <a href="#section-two" class="link-btn">Services</a>
-            <a href="#section-three" class="link-btn">About us</a>
-            <a href="#section-four" class="link-btn">Find us</a>
-            <a href="#section-five" class="link-btn">Contact us</a>
+            <a href="#section-one" class="link-btn"><i class="bi bi-houses-fill"></i> Home</a>
+            <a href="#section-two" class="link-btn"><i class="bi bi-house-door-fill"></i> Latest Houses</a>
+            <a href="#section-three" class="link-btn"><i class="bi bi-file-earmark-person"></i> About us</a>
+            <a href="#section-four" class="link-btn"><i class="bi bi-geo-alt-fill"></i> Find us</a>
+            <a href="#section-five" class="link-btn"><i class="bi bi-telephone-fill"></i> Contact us</a>
 
            </div>
 
@@ -40,12 +46,13 @@
 
         <div class="header">
             <div class="left-header">
+                <img src="spc.jfif" alt="This is a logo">
 
             </div>
             <div class="right-header">
                 <div class="nav-bar">
                 <a href="#section-one">Home</a>
-                <a href="#section-two">Services</a>
+                <a href="#section-two">Latest Houses</a>
                 <a href="#section-three">About us</a>
                 <a href="#section-four">Find us</a>
                 <a href="#section-five">Contact us</a>
@@ -63,18 +70,168 @@
         </div>
         <section id="section-one">
 
+            <div class="whatsapp-div">
+                <img src="whatsapp.png" alt="whatsapp icon">
+            </div>
+
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="hero8.jpg" alt="This is the image of hero1">
+      </div>
+      <div class="swiper-slide">
+        <img src="hero2.jpg" alt="This is the image of hero2">
+      </div>
+      <div class="swiper-slide">
+        <img src="hero8.jpg" alt="This is the image of hero3">
+      </div>
+      <div class="swiper-slide">
+        <img src="hero7.jpg" alt="This is the image of hero4">
+      </div>
+      <div class="swiper-slide">
+        <img src="hero6.jpg" alt="This is the image of hero4">
+      </div>
+      <div class="swiper-slide">
+        <img src="hero4.jpg" alt="This is the image of hero4">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
         </section>
         <section id="section-two">
+
+            <div class="section-two-info">
+
+                <h1>Discover Your Dream Home - <span>Latest Houses for Sale</span></h1>
+                <h3>Welcome to our premier real estate platform, where you can find the latest houses for sale tailored to your needs. Whether you're searching for a cozy starter home, a luxurious estate, or a modern family house, our curated listings feature the newest properties on the market. Explore our extensive collection to find your perfect home. With our expert guidance and personalized service, your dream home is just a click away. Start your home-buying journey with us today and discover why we are the trusted choice for finding the latest houses for sale.</h3>   
+                
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="top-card">
+                        <img src="./house photos/red house/front view/IMG_20240724_112435.jpg" alt="This is an image">
+    
+                    </div>
+                    <div class="middle-card">
+
+                        <p class="title-p">2 Doubles and 3 Singles(All Self Contained)</p>
+                        <p class="detail-p"> <ul>
+                            <li>Full with Tenants(Collects 1.5m Ugx monthly).</li>
+                            <li>Fenced, self contained, water and power tenant......</li>
+                        </ul></p>
+    
+                    </div>
+                    <div class="price-card">
+
+                        <a href="./house-one.html" class="eye">
+
+                            <i class="bi bi-eye-fill"></i>
+                            <p>View</p>
+
+                        </a>
+                        
+                        <div class="price">
+                            145 million Ugx
+
+                        </div>
+                        <button type="button" class="seller-btn">
+                            Meet Seller
+                        </button>
+                        
+    
+                    </div>
+    
+    
+    
+    
+                </div>
+
+                <div class="card">
+                    <div class="top-card">
+                        <img src="./house photos/pink house/font view/IMG_20240724_114204.jpg" alt="">
+    
+                    </div>
+                    <div class="middle-card">
+
+                        <p class="title-p">3 Bedrooms, 3 Indoor Toilets and Bathroom</p>
+                        <p class="detail-p"><ul>
+                            <li>Sitting and Dining and Kitchen.</li>
+                            <li>2 Boys quarters.....</li>
+                        </ul></p>
+
+                        
+    
+    
+                    </div>
+                    <div class="price-card">
+
+                        <a href="" class="eye">
+
+                            <i class="bi bi-eye-fill"></i>
+                            <p>View</p>
+
+                        </a>
+
+                        
+                        <div class="price">
+                            450 million Ugx
+
+                        </div>
+                        <button type="button" class="seller-btn">
+                            Meet Seller
+                        </button>
+                        
+    
+                    </div>
+    
+    
+    
+    
+                </div>
+            </div>
+            
+
+
+
+
+
 
         </section>
 
         <section id="section-three">
+            <p>Here is About our Organisation</p>
+            <p>When was our oraganisation formed</p>
 
         </section>
         <section id="section-four">
+            <p>Here is where our Organisation is formed</p>
+            <p>Where are we located</p>
+            <p>Google maps snipet</p>
 
         </section>
         <section id="section-five">
+            <p>Here is the Organisations contact</p>
+            <p>How can you easily contact us or reach out to us</p>
+            <p>Gmail</p>
+            <p>whatsapp</p>
+            
+        
+
+
+           
 
         </section>
 
@@ -94,7 +251,9 @@
 
 
 
+   
     </div>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
 </body>
 </html>

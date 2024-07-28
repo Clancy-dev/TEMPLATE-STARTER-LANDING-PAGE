@@ -1,0 +1,143 @@
+.whole-container{
+    max-width: 100%;
+    min-height: 90vh;
+    padding: 0.3rem 0.5rem;
+    display: flex;
+    gap: 17rem;
+    @media (max-width:1115px) {
+        gap: 0.5rem;
+        
+    }
+ 
+
+    .back{
+        max-width: 3rem;
+        height: 90vh;
+        font-size: 200%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        color: orangered;
+        margin-right: 1rem;
+
+    
+    }
+    
+
+    .house-card{
+        max-width: 100%;
+        min-height: 110vh;
+        background-color: blue;
+       
+
+        .top-house-card{
+            max-width: 100%;
+            height: 60vh;
+            position: relative;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            background-color: green;
+            margin: 0;
+            padding: 0;
+            @media (max-width:417px) {
+                height: 45vh;
+                    
+            }
+          
+            
+            
+            
+
+            .swiper {
+                max-width: 100%;
+                padding-top: 10px;
+                padding-bottom: 0;
+
+               
+              }
+          
+              .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                max-width: 300px;
+                min-height: 300px;
+               
+
+              }
+          
+              .swiper-slide img {
+                display: block;
+                max-width: 100%;
+              }
+              
+           
+
+
+            
+        }
+        .middle-house-card{
+            max-width: 100%;
+            min-height: 20vh;
+            padding: 2rem 4rem;
+            color: brown;
+            @media(max-width:417px){
+                padding: 1rem;
+            }
+         
+            
+
+            .title-p{
+                font-size: 190%;
+                @media (max-width:1115px) {
+                    font-size: 180%;
+                }
+                @media (max-width:1115px) {
+                    font-size: 160%;
+                }
+                @media (max-width:875px) {
+                    font-size: 140%;
+                }
+               
+            }
+
+            .detail-p{
+                font-size: 185%;
+            }
+            @media (max-width:363px) {
+                font-size: 90%;
+            
+            }
+        }
+        .bottom-house-card{
+            max-width: 100%;
+            min-height: 4vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            @media (max-width:446px) {
+                margin-bottom: 1rem;
+            }
+           
+
+            .meet-seller{
+                background-color: orangered;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                padding: 1rem 5rem;
+                justify-content: center;
+                color: white;
+                cursor: pointer;
+                @media (max-width:337px) {
+                    padding: 1rem 2rem;
+                }
+
+
+            }
+        }
+
+    
+    }
+}
