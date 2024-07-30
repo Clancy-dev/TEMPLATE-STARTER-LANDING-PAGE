@@ -10,6 +10,13 @@
   height: 300vh;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 html {
   scroll-behavior: smooth;
   position: relative;
