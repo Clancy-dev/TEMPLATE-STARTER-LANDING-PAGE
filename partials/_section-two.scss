@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 100vh;
     padding-bottom: 0.5rem;
+
     
    
     
@@ -39,23 +40,72 @@
 
    }
    .card-container{
-    width: 100%;
+    max-width: 100%;
     min-height: 50vh;
-    padding: 1rem;
-    display: flex;
-    gap: 1rem;
-
-    @media (max-width:700px) {
-        flex-direction: column;
+    display: grid;
+    // grid-template-columns: 650px 650px;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 300px));
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    @media (max-width:1239px) {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 300px));
     }
+    @media (max-width:1082px) {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 300px));
+    }
+    @media (max-width:882px) {
+        justify-content: space-between;
+        padding: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 300px));
+    }
+    @media (max-width:778px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+        gap: 2rem;
+
+    }
+    @media (max-width:667px) {
+        grid-template-columns: 643px;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+        
+    }
+    
+  
+    
+    
+   
+   
+
+   
 
     .card{
-        width: 50%;
+       max-width: 700px;
        min-height: 100%;
-        @media (max-width:700px) {
-            width: 100%;
-        }
-
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+       background-color: rgba(128, 128, 128, 0.253);
+       @media (max-width:1239px) {
+        max-width: 500px;
+    }
+    @media (max-width:1082px) {
+        max-width: 400px;
+    }
+    @media (max-width:882px) {
+        max-width: 340px;
+    }
+    @media (max-width:778px) {
+        max-width: 300px;
+    }
+    @media (max-width:667px) {
+        max-width: 643px;
+        
+    }
+    
+       
+      
         .top-card{
             width: 100%;
             min-height: 50%;
@@ -73,7 +123,6 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            background-color: white;
             color: brown;
             padding: 0.5rem 1rem;
             @media (max-width:513px) {
@@ -130,27 +179,71 @@
             gap: 0.5rem;
             display: flex;
             justify-content: space-between;
+            flex-direction: column;
 
             .eye{
-                max-width: 30%;
-                min-height: 100%;
-                font-size: 160%;
+                max-width: 35%;
+                height: 2.7rem;
+                font-size: 130%;
+                border: 1px solid;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: white;
-                background-color: orangered;
+                box-shadow: rgba(253, 1, 1, 0.637) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
                 border-radius: 15px;
                 text-decoration: none;
                 gap: 2px;
                 padding: 0.5rem 2rem;
 
-                @media (max-width:570px) {
-                    font-size: 120%;
-                }
-                @media (max-width:405px) {
-                    font-size: 95%;
-                }
+              @media (max-width:1238px) {
+                max-width: 40%;
+                
+              }
+              @media (max-width:1081px) {
+                max-width: 50%;
+                
+              }
+              @media (max-width:880px) {
+                max-width: 57%;
+                
+              }
+              @media (max-width:777px) {
+                max-width: 70%;
+                
+              }
+              @media (max-width:667px) {
+                max-width: 35%;
+                
+              }
+              @media (max-width:562px) {
+                max-width: 40%;
+                
+              }
+              @media (max-width:495px) {
+                max-width: 45%;
+                
+              }
+              @media (max-width:445px) {
+                max-width: 55%;
+                font-size: 110%;
+                
+              }
+              @media (max-width:336px) {
+                max-width: 60%;
+                
+              }
+              @media (max-width:311px) {
+                max-width: 70%;
+                font-size: 100%;
+                
+              }
+              @media (max-width:260px) {
+                max-width: 70%;
+                font-size: 90%;
+                padding: 1rem;
+                
+              }
                 
                 i{
                     color: black;
@@ -161,16 +254,17 @@
 
             }
             .price{
-                max-width: 70%;
+                max-width: 100%;
                 min-height: 100%;
                 color: brown;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 font-weight: 600;
-                font-size: 150%;
-                color: green;
+                font-size: 170%;
+                color: black;
                 gap: 0.5rem;
+
+                @media (max-width:666px) {
+                    
+                }
 
                 @media (max-width:570px) {
                     font-size: 120%;
@@ -182,32 +276,7 @@
             
 
             }
-            .seller-btn{
-                max-width: 30%;
-                min-height: 100%;
-                background-color: orangered;
-                padding: 0.5rem 2rem;
-                font-size: 20px;
-                border: none;
-                color: white;
-                border-radius: 10px;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                @media (max-width:570px) {
-                    font-size: 17px;
-                }
-                @media (max-width:405px) {
-                    font-size: 15px;
-                }
-                @media (max-width:350px) {
-                    font-size: 90%;
-                    padding: 0.5rem;
-                }
-
-            }
+           
 
         }
     }

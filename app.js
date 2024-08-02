@@ -4,6 +4,7 @@ const btnOpenPopUpAndShowOverlay = document.querySelector(".nav-icon");
 const btnClosePopUpAndHideOverlay = document.querySelector(".right-header-pop");
 const linkBtns = document.querySelectorAll(".link-btn");
 
+
 function closePopUpAndHideOverlay(){
     popUp.classList.add("close-pop-up-menu");
     overlay.classList.add("hide-overlay");
