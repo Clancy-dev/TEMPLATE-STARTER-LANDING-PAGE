@@ -12,122 +12,120 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <!-- LOGO -->
+        <a href="/index.html" class="logo-container">
+            <img src="spc.jfif" alt="This is a logo">
+        </a>
+        <!-- LOGO -->
+
+        <!-- NAV BAR -->
+        <nav>
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/about-us.html" class="nav-link">About us</a>
+            <a href="/find-us.html" class="nav-link">Find us</a>
+            <a href="/contact-us.html" class="nav-link">Contact us</a>
+            <div class="nav-icon">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+        <!-- NAV-BAR -->
+    </header>
+    <!-- HEADER -->
+
     <div class="main-container-contact">
-
+        <!-- This is the beginning of the contact form -->
         <form action="https://formsubmit.co/clancyro1000@gmail.com" class="message-form" method="POST">
+            <!-- Note:action="https://formsubmit.co/clancyro1000@gmail.com" and method="POST" are very important. -->
             <!-- Important fields -->
-             <!-- 1. Take us to the thank-you page -->
-             <input type="hidden" name="_next" value="/thank-you.html">
-             <input type="hidden" name="_subject" value="New Client Submission!">
-             <input type="hidden" name="_cc" value="clancyro1789@gmail.com">
+             <!-- These fields below will not physically appear they will be hidden -->
+             <!-- 1. Take us to the thank-you page Note: http://127.0.0.1:5500 is the local host we shall have to change it to the overall link where our website is being hosted.ie http://symo-property-consultants-ltd.netlify.app -->
+             <input type="hidden" name="_next" value="http://symo-property-consultants-ltd/thank-you.html">
+             <!-- 2. If we have many forms doing almost the same thing we would like to distinguish it with that text in the value(New Client Form Suubmission!) -->
+             <input type="hidden" name="_subject" value="New Client Form Submission!">
+            <!--3. This is the other email that you would like to receive the same message -->
+             <input type="hidden" name="_cc" value="lukwagosymo95@gmail.com">
+            <!-- 4.This message will automatically be sent to the email address of the new client filling in the form -->
              <input type="hidden" name="_autoresponse" value="Thank you for contacting us! We will be in touch with you in a minute.">
+            <!-- 5.This next step will put all the sent message in a table format -->
              <input type="hidden" name="_template" value="table">
+             <!-- Important Fields -->
 
-           
+             <!-- This is the message form -->
+              <!-- Note: Adding name to all the fields is very important because they will use them in their already set uuuup back end project. -->
             <div class="bottom-message-form">
-                
-
                 <div class="inside-bottom-message-form-1">
-
                     <h2>Contact Agent</h2>
-
                 </div>
                 <div class="inside-bottom-message-form-2">
-
                     <h2>Reach out to one of our property experts.</h2>
-
                 </div>
                 <div class="inside-bottom-message-form-3">
                     <div class="icon">
                         <img src="avatar.png" alt="This is an image of an avatar.">
                     </div>
-
                 </div>
                 <div class="inside-bottom-message-form-4">
                     <div class="name">
                         <h2>Symo Property Consultants Ltd</h2>
                     </div>
-
                 </div>
                 <div class="inside-bottom-message-form-5">
-                    
+                    <div class="name">
+                        <h2>
                     <i class='bx bxs-phone'></i>
-                    <p>+256 758649341</p>
-
+                    <h2>+256 758649341</h2>
+                        </h2>
+                    </div>
                 </div>
                 <div class="inside-bottom-message-form-6">
                     <div class="details">
                         <h2>Your Details</h2>
                     </div>
-
                 </div>
                 <div class="inside-bottom-message-form-7">
                    <label for="title">First Name</label>
-
                 </div>
                 <div class="inside-bottom-message-form-8">
-                    <input type="text" name="Client's First Name" id="title" placeholder="Please enter your First Name" class="placeholder" required>
-
+                    <input type="text" name="NewClient'sFirstName" id="title" placeholder="Please enter your First Name" class="placeholder" required>
                 </div>
                 <div class="inside-bottom-message-form-9">
                     <label for="title">last Name</label>
-
                 </div>
                 <div class="inside-bottom-message-form-10">
-                    <input type="text" name="Client's Last Name" id="title" placeholder="Please enter your last Name" required>
-
+                    <input type="text" name="NewClient'sLastName" id="title" placeholder="Please enter your last Name" required>
                 </div>
                 <div class="inside-bottom-message-form-11">
                     <label for="title">Email Address</label>
-
                 </div>
                 <div class="inside-bottom-message-form-12">
-                    <input type="email" name="Client's Email Address" id="title" placeholder="eg. name@gmail.com" required>
-
-
+                    <input type="email" name="NewClient'sEmailAddress" id="title" placeholder="eg. name@gmail.com" required>
                 </div>
                 <div class="inside-bottom-message-form-13">
                     <label for="title">Phone Number</label>
-
                 </div>
                 <div class="inside-bottom-message-form-14">
-                    <input type="number" name="Client's Phone Number" id="title" placeholder="eg.+256 Phone number" required>
+                    <input type="number" name="NewClient'sPhoneNumber" id="title" placeholder="eg.+256 Phone number" required>
                 </div>
                 <div class="inside-bottom-message-form-15">
                     <label for="title">Message</label>
                 </div>
                 <div class="inside-bottom-message-form-16">
-                    <textarea name="Client's Message" placeholder="How can we help you?" id="text-area" rows="7" required></textarea>
-
-
+                    <textarea name="NewClient'sMessage" placeholder="How can we help you?" id="text-area" rows="7" required></textarea>
                 </div>
                 <div class="inside-bottom-message-form-17">
                     <button type="submit" class="submit-btn">
                         Submit
-                    </button>
-                    
+                    </button>   
                 </div>
-                <div class="inside-bottom-message-form-18">
-
-                </div>
-
             </div>
-
-
-
-
-
-
         </form>
-
-
-
-
-
-
-    </div>
-    
+        <!-- This is the end of the contact form -->
+    </div>  
 </body>
 </html>

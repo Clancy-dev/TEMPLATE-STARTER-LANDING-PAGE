@@ -67,6 +67,8 @@
             max-width: 100%;
             min-height: 70vh;
             background-color: white;
+            padding-bottom: 0.5rem;
+            border-radius: 10px;
             
            
 
@@ -151,7 +153,7 @@
             .inside-bottom-message-form-4{
                 max-width: 100%;
                 min-height: 6vh;
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.2rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -193,10 +195,46 @@
             .inside-bottom-message-form-5{
                 max-width: 100%;
                 min-height: 6vh;
-                background-color: green;
                 margin-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .name{
+                    width: 50%;
+                    min-height: 6vh;
+                    background-color: #E6ECFF;
+                    color: brown;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-bottom-right-radius: 15px;
+                    padding: 0.2rem 0.5rem;
+                    @media (max-width:960px) {
+                        width: 70%;
+                    }
+                    @media (max-width:562px) {
+                        width: 90%;
+                    }
+                    @media (max-width:490px) {
+                        font-size: 90%;
+                    }
+                    @media (max-width:400px) {
+                        font-size: 70%;
+                    }
+                    @media (max-width:317px) {
+                        font-size: 60%;
+                    }
+                    @media (max-width:280px) {
+                        font-size: 50%;
+                    }
 
-                //Skipped
+                }
+
+
+
+
+                
+
             }
             .inside-bottom-message-form-6{
                 max-width: 100%;
@@ -442,13 +480,13 @@
                 max-width: 100%;
                 min-height: 6vh;
                 margin-bottom: 0.5rem;
-                cursor: pointer;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 .submit-btn{
                     width: 30%;
                     height: 6vh;
+                    cursor: pointer;
                     background-color: orangered;
                     font-size: 120%;
                     border-radius: 5px;

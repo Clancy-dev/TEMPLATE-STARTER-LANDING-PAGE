@@ -3,6 +3,8 @@ const overlay = document.querySelector(".overlay");
 const btnOpenPopUpAndShowOverlay = document.querySelector(".nav-icon");
 const btnClosePopUpAndHideOverlay = document.querySelector(".right-header-pop");
 const linkBtns = document.querySelectorAll(".link-btn");
+const allLinks = document.querySelectorAll('.nav-link');
+const windowPathname = window.location.pathname;
 
 
 function closePopUpAndHideOverlay(){
@@ -53,6 +55,25 @@ const swiper = new Swiper('.swiper', {
     //   el: '.swiper-scrollbar',
     // },
   });
+
+  /****
+   * MAKE LINK ACTIVE
+   */
+  //get the window path name using the window object
+// const windowPathname = window.location.pathname;
+
+//select all the nav links
+// const allLinks = document.querySelectorAll('.nav-link');
+
+//loop through the link pathname and then we compare it with the window pathname
+allLinks.forEach((oneLink)=>{
+    const navLinkPathname = new URL(oneLink.href).pathname;
+    if(navLinkPathname === windowPathname || (navLinkPathname === '/' && windowPathname === '/index.html')){
+        oneLink.classList.add("active");
+    }
+
+
+});
 
 
 
