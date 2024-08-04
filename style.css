@@ -512,7 +512,7 @@ header nav .nav-icon {
 
 .main-sub-house-container {
   max-width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 .main-sub-house-container .overlay {
   width: 100%;
@@ -545,6 +545,7 @@ header nav .nav-icon {
 .main-sub-house-container .images-container {
   width: 70%;
   min-height: 97vh;
+  background-color: red;
   position: fixed;
   right: 15%;
   top: 1%;
@@ -623,7 +624,7 @@ header nav .nav-icon {
 }
 .main-sub-house-container .images-container .bottom-images-container {
   width: 100%;
-  min-height: 10vh;
+  padding: 1rem 2rem;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -853,12 +854,331 @@ header nav .nav-icon {
 .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 {
   max-width: 100%;
   min-height: 10vh;
-  background-color: purple;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
-.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-3 {
-  max-width: 100%;
-  min-height: 10vh;
-  background-color: brown;
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-1 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: xx-large;
+  color: brown;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-1 {
+    font-size: x-large;
+  }
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-1 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-2 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-2 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-2 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-3 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-3 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-3 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-4 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-4 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-4 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-4-created {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-4-created {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-4-created span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-5 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-5 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-5 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-6 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-6 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-6 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-7 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-7 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-7 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-8 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  padding-top: 0;
+  color: brown;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-8 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-8 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-9 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  padding-top: 0;
+  color: brown;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-9 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-9 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-10 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-10 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-10 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-11 {
+  width: 100%;
+  padding: 1rem 2rem;
+  padding-top: 0;
+  font-size: xx-large;
+  color: brown;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-11 {
+    font-size: x-large;
+  }
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-11 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-11-created {
+  width: 100%;
+  padding: 1rem 2rem;
+  padding-top: 0;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-11-created {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-11-created span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-12 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: larger;
+  padding-top: 0;
+  font-weight: 600;
+  color: brown;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-12 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-13 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: brown;
+  padding-top: 0;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-13 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-13 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-14 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  padding-top: 0;
+  color: brown;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-14 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-14 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-15 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  padding-top: 0;
+  color: brown;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-15 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-15 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-16 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: large;
+  padding-top: 0;
+  color: brown;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-16 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-16 span {
+  font-weight: 700;
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-17 {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: larger;
+  font-weight: 600;
+  padding-top: 0;
+  color: brown;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-17 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-18 {
+  width: 100%;
+  padding: 1rem 2rem;
+  padding-top: 0;
+  font-size: large;
+  color: brown;
+}
+@media (max-width: 430px) {
+  .main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-18 {
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+}
+.main-sub-house-container .card-container .card .middle-card .top-middle-card .top-middle-card-2 .content-18 span {
+  font-weight: 700;
 }
 .main-sub-house-container .card-container .card .middle-card .bottom-middle-card {
   max-width: 100%;
@@ -893,14 +1213,21 @@ header nav .nav-icon {
 .main-sub-house-container .card-container .card .lower-card {
   max-width: 100%;
   min-height: 10vh;
-  background-color: black;
+  background-color: purple;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.3rem;
 }
-.main-sub-house-container .card-container .card .lower-card .contact-agent-btn {
-  padding: 1.4rem 5rem;
-  cursor: pointer;
+.main-sub-house-container .card-container .card .lower-card .contact-property-expert {
+  width: 30%;
+  display: flex;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: orangered;
 }
 .main-sub-house-container .footer {
   max-width: 100%;
