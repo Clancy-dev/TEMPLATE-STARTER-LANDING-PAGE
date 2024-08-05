@@ -4,12 +4,13 @@ header{
     padding: 0.5rem;
     display: flex;
     gap: 0.5rem;
+    background-color: whitesmoke;
     
     //logo
     .logo-container{
         display: block;
-        max-width: 8.5rem;
-        min-height: 5rem;
+        max-width: 11rem;
+        max-height: 6.5rem;
         cursor: pointer;
         img{
             width: 100%;
@@ -24,10 +25,15 @@ header{
         padding: 0.3rem;
         padding: 0 1rem;
         font-weight: 600;
-        font-size: larger;
+        font-size: 140%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 12rem;
+        @media (max-width:1167px) {
+            gap: 0;
+            justify-content: space-between;
+        }
         @media (max-width:780px) {
             justify-content: end;
     
@@ -41,9 +47,10 @@ header{
 
             }
         }
-        .active{
-            color: yellow;
-        }
+        // .active{
+        //     color: brown;
+            
+        // }
 
         .nav-icon{
             display: none;

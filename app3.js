@@ -21,10 +21,10 @@ var swiperTwo = new Swiper(".mySwiper", {
 /****************
  * FORM 2(IMAGES CONTAINER/IMAGES FORM)
  */
-const imagesContainer = document.querySelector(".images-container");
+const imagesContainer = document.querySelector(".popup-images-container");
 const overlayTwo = document.querySelector(".overlay");
 const btnOpenPopUpAndShowOverlayTwo = document.querySelector(".more-images-btn");
-const btnClosePopUpAndHideOverlayTwo = document.querySelector(".x-container");
+const btnClosePopUpAndHideOverlayTwo = document.querySelector(".cancel-icon-container");
 
 function closePopUpAndHideOverlayTwo(){
     imagesContainer.classList.add("hide-images-container");

@@ -66,14 +66,22 @@ const swiper = new Swiper('.swiper', {
 // const allLinks = document.querySelectorAll('.nav-link');
 
 //loop through the link pathname and then we compare it with the window pathname
-allLinks.forEach((oneLink)=>{
-    const navLinkPathname = new URL(oneLink.href).pathname;
-    if(navLinkPathname === windowPathname || (navLinkPathname === '/' && windowPathname === '/index.html')){
-        oneLink.classList.add("active");
-    }
+
+// function removeBrownColorOnLink(){
+//   allLinks.forEach((oneLink)=>{
+//     const navLinkPathname = new URL(oneLink.href).pathname;
+//     if(navLinkPathname === windowPathname){
+//         oneLink.classList.remove("active");
+//     }
 
 
-});
+// });
+// }
+
+removeBrownColorOnLink()
+
+console.log(allLinks);
+
 
 
 

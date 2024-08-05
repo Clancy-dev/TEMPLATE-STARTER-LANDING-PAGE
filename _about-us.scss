@@ -45,7 +45,7 @@
         font-size:large;
         @media (max-width:600px) {
             width: 100%;
-            padding: 0.5rem;
+            padding: 0.5rem 2rem;
             font-size: medium;
         }
         span{
@@ -75,7 +75,7 @@
         padding-bottom: 0.5rem;
         @media (max-width:600px) {
             width: 100%;
-            padding: 0.5rem;
+            padding: 0.5rem 2rem;
         }
     }
     .details-2{
@@ -86,7 +86,7 @@
         
         @media (max-width:600px) {
             width: 100%;
-            padding: 0.5rem;
+            padding: 0.5rem 2rem;
         }
         
         span{
@@ -121,7 +121,7 @@
         color: grey;
         @media (max-width:600px) {
             width: 100%;
-            padding: 0.5rem;
+            padding: 0.5rem 2rem;
         }
     }
     .title-4{
@@ -144,8 +144,7 @@
         color: grey;
         @media (max-width:600px) {
             width: 100%;
-            padding: 0.5rem;
-
+            padding: 0.5rem 2rem;
         }
     }
     .title-5{
@@ -168,7 +167,7 @@
         padding-top: 0;
         @media (max-width:600px) {
             width: 100%;
-            padding: 0.5rem;
+            padding: 0.5rem 2rem;
         }
     }
     .title-6{
@@ -192,7 +191,8 @@
         font-size: medium;
         @media (max-width:600px) {
             width: 100%;
-            padding: 0.5rem;
+            padding: 0.5rem 2rem;
+            padding-bottom: 2rem;
         }
         span{
             color: brown;
