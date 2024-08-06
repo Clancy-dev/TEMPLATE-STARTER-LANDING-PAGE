@@ -144,17 +144,6 @@ header nav .nav-icon {
   height: 100vh;
   position: relative;
 }
-@keyframes dancingShadow {
-  0% {
-    box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
-  }
-  50% {
-    box-shadow: 0 0 25px 5px orange, 0 0 25px 5px red;
-  }
-  100% {
-    box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
-  }
-}
 #section-one .whatsapp-div {
   width: 3.5rem;
   height: 3.5rem;
@@ -167,6 +156,17 @@ header nav .nav-icon {
   background-color: green;
   box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
   animation: dancingShadow 1.5s infinite alternate;
+}
+@keyframes dancingShadow {
+  0% {
+    box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
+  }
+  50% {
+    box-shadow: 0 0 25px 5px orange, 0 0 25px 5px red;
+  }
+  100% {
+    box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
+  }
 }
 #section-one .whatsapp-div a {
   width: 100%;
@@ -265,19 +265,28 @@ header nav .nav-icon {
   max-width: 100%;
   min-height: 50vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 300px));
   justify-content: space-around;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
 }
-@media (max-width: 1239px) {
+@media (max-width: 1115px) {
   #section-two .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(480px, 300px));
   }
 }
-@media (max-width: 1082px) {
+@media (max-width: 1081px) {
+  #section-two .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 300px));
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 939px) {
   #section-two .card-container {
     grid-template-columns: repeat(auto-fit, minmax(400px, 300px));
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 882px) {
@@ -290,10 +299,10 @@ header nav .nav-icon {
 @media (max-width: 778px) {
   #section-two .card-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
-    gap: 2rem;
+    gap: 1rem;
   }
 }
-@media (max-width: 667px) {
+@media (max-width: 648px) {
   #section-two .card-container {
     grid-template-columns: 643px;
     gap: 2rem;

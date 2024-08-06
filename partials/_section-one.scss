@@ -3,17 +3,7 @@
     height: 100vh;
     position: relative;
 
-    @keyframes dancingShadow {
-      0% {
-          box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
-      }
-      50% {
-          box-shadow: 0 0 25px 5px orange, 0 0 25px 5px red;
-      }
-      100% {
-          box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
-      }
-  }
+    
 
     .whatsapp-div{
       width: 3.5rem;
@@ -26,7 +16,19 @@
       cursor: pointer;
       background-color: green;
       box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
-    animation: dancingShadow 1.5s infinite alternate;
+      animation: dancingShadow 1.5s infinite alternate;
+
+      @keyframes dancingShadow {
+        0% {
+            box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
+        }
+        50% {
+            box-shadow: 0 0 25px 5px orange, 0 0 25px 5px red;
+        }
+        100% {
+            box-shadow: 0 0 15px 0 orange, 0 0 15px 0 red;
+        }
+    }
 
       a{
         width: 100%;
@@ -40,6 +42,7 @@
         height: 100%;
       }
     }
+    
 
     @media (max-width:856px) {
       height: 90vh;
