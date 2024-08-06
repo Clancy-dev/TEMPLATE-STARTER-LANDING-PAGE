@@ -39,13 +39,21 @@ header{
     
         }
 
-        .nav-link{
+        a{
             text-decoration: none;
             color: brown;
             @media (max-width:780px) {
                 display: none;
 
             }
+        }
+        a.active {
+            color: orangered;
+            text-decoration: underline;
+            transition: 1s ease all;
+        }
+        a:not(.active) {
+            text-shadow: none;
         }
         // .active{
         //     color: brown;
@@ -62,6 +70,8 @@ header{
                 cursor: pointer;
             }
         }
+
+        
     }
  
 }

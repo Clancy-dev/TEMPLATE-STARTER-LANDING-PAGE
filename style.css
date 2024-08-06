@@ -73,6 +73,11 @@ html {
   width: 100%;
   height: 100%;
 }
+.pop-up-menu .link-container a.active {
+  color: orangered;
+  text-decoration: underline;
+  transition: 1s ease all;
+}
 
 .close-pop-up-menu {
   display: none;
@@ -117,14 +122,22 @@ header nav {
     justify-content: end;
   }
 }
-header nav .nav-link {
+header nav a {
   text-decoration: none;
   color: brown;
 }
 @media (max-width: 780px) {
-  header nav .nav-link {
+  header nav a {
     display: none;
   }
+}
+header nav a.active {
+  color: orangered;
+  text-decoration: underline;
+  transition: 1s ease all;
+}
+header nav a:not(.active) {
+  text-shadow: none;
 }
 header nav .nav-icon {
   display: none;

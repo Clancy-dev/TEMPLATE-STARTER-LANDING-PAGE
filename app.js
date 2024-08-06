@@ -7,6 +7,21 @@ const allLinks = document.querySelectorAll('.nav-link');
 const windowPathname = window.location.pathname;
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all nav links
+    const navLinks = document.querySelectorAll("nav a");
+
+    // Get the current URL path
+    const currentPath = window.location.pathname;
+
+    // Loop through the links and add 'active' class to the matching link
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+        }
+    });
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
   let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
@@ -72,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.head.appendChild(metaDescription);
 });
 
-fetch("https://www.google.com/ping?sitemap=https://yourwebsite.com/sitemap.xml")
+fetch("https://www.google.com/ping?sitemap=https://symo-property-consultants-ltd.netlify.app/sitemap.xml")
     .then(response => console.log("Sitemap submitted"))
     .catch(error => console.error("Error submitting sitemap:", error));
 
@@ -128,7 +143,7 @@ linkBtns.forEach((linkBtn) => {
     linkBtn.addEventListener("click",closePopUpAndHideOverlay);
     
 });
-console.log(linkBtns);
+
 
 //SWIPER
 const swiper = new Swiper('.swiper', {
@@ -182,9 +197,7 @@ const swiper = new Swiper('.swiper', {
 // });
 // }
 
-removeBrownColorOnLink()
 
-console.log(allLinks);
 
 
 

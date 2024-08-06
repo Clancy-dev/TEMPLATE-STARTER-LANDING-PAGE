@@ -21,3 +21,23 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
     },
   });
+
+
+  
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all nav links
+  const navLinks2 = document.querySelectorAll("link-btn");
+
+  // Get the current URL path
+  const currentPath = window.location.pathname;
+  console.log("object");
+
+  alert("it is working");
+
+  // Loop through the links and add 'active' class to the matching link
+  navLinks2.forEach(link => {
+      if (link.getAttribute("href") === currentPath) {
+          link.classList.add("active");
+      }
+  });
+});
