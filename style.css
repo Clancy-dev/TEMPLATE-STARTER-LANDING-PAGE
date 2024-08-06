@@ -74,7 +74,6 @@ html {
   height: 100%;
 }
 .pop-up-menu .link-container a.active {
-  color: orangered;
   text-decoration: underline;
   transition: 1s ease all;
 }
